@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import apiService from '../services/api';
 import LoadingSpinner from './LoadingSpinner';
-import ParentCounter from './ParentCounter';
 
 const UserList: React.FC = () => {
   const [users, setUsers] = useState<User[]>([]);
@@ -61,7 +60,6 @@ const UserList: React.FC = () => {
           </li>
         ))}
       </ul>
-      <ParentCounter />
     </div>
   );
 };
